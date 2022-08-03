@@ -1,0 +1,34 @@
+# Typical ignores from toolchains
+**/.settings
+*.dep
+*.ewt
+*.uvguix.*
+*.uvgui.*
+*.bak
+**/UVBuild
+*.tmp
+**/BuildLog.log
+**/JLinkLog.txt
+**/EventRecorderStub.scvd
+**/Listings
+*.launch
+
+# SDK files to ignore
+**/debug
+**/release
+**/flash_debug
+**/flash-release
+**/sdram_debug
+**/sdram_release
+**/flexspi_nor_debug
+**/flexspi_nor_release
+**/iar/settings
+**/iar/*/settings
+**/mdk/output
+**/armgcc/CMakeCache.txt
+**/armgcc/build_log.txt
+**/armgcc/output.map
+**/DebugConfig
+**/ReleaseConfig
+**/ide_overrides.cmake
+**/iar-vsc.json

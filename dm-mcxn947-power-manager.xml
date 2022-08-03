@@ -1,0 +1,26 @@
+<data:item xmlns:data="data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="data ../../xsd/alp.xsd" id="dm-mcxn947-power-manager" type="demo" format="projectfile" versionSchema="1.0.0" name="MCXN94x power manager">
+    <display_title>
+        MCXN94x power manager training lab
+    </display_title>
+    <overview>
+        <![CDATA[The Power Manager example uses runtime menus to evaluate the power modes and power management features of the MCX Nx4x.  This example also uses the Power Manager component of MCUXpresso SDK, which provides a common framework of APIs for power management. For more details how to use this example and measure current, refer to the lab guide "MCXNx4x Power Management Lab.pdf".]]>
+    </overview>
+    <toolchains>
+        <toolchain name="mcux"></toolchain>
+        <toolchain name="iar"></toolchain>
+        <toolchain name="vscode"></toolchain>
+    </toolchains>
+    <families>
+        <family name="mcx"></family>
+    </families>
+    <nxp_compatible_hw>
+        <hw id="FRDM-MCXN947"></hw>
+        <hw id="MCX-N9XX-EVK"></hw>
+    </nxp_compatible_hw>
+    <peripherals>
+        <peripheral name="clocks"></peripheral>
+    </peripherals>
+    <categories>
+        <category name="low_power"></category>
+    </categories>
+</data:item>

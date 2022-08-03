@@ -1,0 +1,21 @@
+{
+  "version": "1.4",
+  "toolchainPath": "",
+  "linkedProjects": [],
+  "trustZoneType": "none",
+  "multicoreType": "none",
+  "debug": {
+    "linkserver": {},
+    "pemicro": {},
+    "segger": {}
+  },
+  "projectType": "sdk-freestanding",
+  "sdk": {
+    "version": "2.14.0",
+    "path": "",
+    "boardId": "mcxn9xxevk",
+    "deviceId": "MCXN947",
+    "coreId": "cm33_core0_MCXN947",
+    "manifestId": "SDK_2.x_MCX-N9XX-EVK"
+  }
+}

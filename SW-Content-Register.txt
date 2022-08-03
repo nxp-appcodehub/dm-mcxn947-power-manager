@@ -1,0 +1,10 @@
+NXP Software Content Register
+ 
+Name: dm-mcxn947-power-manager
+Version: 2.0
+Outgoing License: LA_OPT_NXP_Software_License v53 December 2023 - Additional Distribution License granted, license in Section 2.3 applies
+License File: License.txt
+Description: The Power Manager example uses runtime menus to evaluate the power modes and power management features of the MCX Nx4x.
+Release location: https://github.com/nxp-appcodehub/dm-mcxn947-power-manager
+Origin: NXP (BSD-3-Clause)
+        CMSIS (Apache-2.0) - https://github.com/ARM-software/CMSIS_5/releases/tag/5.8.0

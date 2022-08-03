@@ -1,0 +1,18 @@
+[
+  {
+    "name": "ARM GCC",
+    "environmentVariables": {
+      "ARMGCC_DIR": "",
+      "SdkRootDirPath": "${command:mcuxpresso.repoPath}"
+    },
+    "cmakeSettings": {
+      "LIBRARY_TYPE": "NEWLIB",
+      "LANGUAGE": "C",
+      "DEBUG_CONSOLE": "UART",
+      "POSTPROCESS_UTILITY": "${command:mcuxpresso.postProcessPath}",
+      "SdkRootDirPath": "${command:mcuxpresso.repoPath}"
+    },
+    "keep": true,
+    "toolchainFile": "${command:mcuxpresso.repoPath}/tools/cmake_toolchain_files/armgcc.cmake"
+  }
+]

@@ -1,0 +1,179 @@
+---
+component.power_manager_core:
+  section-type: component
+  contents:
+    repo_base_path: components/power_manager/core
+    project_base_path: component/power_manager/core
+    cc-define:
+      GENERIC_LIST_LIGHT: 1
+    cc-include:
+    - repo_relative_path: "./"
+    files:
+    - source: fsl_pm_core.h
+    - source: fsl_pm_core.c
+    - source: fsl_pm_config.h
+  __requires__:
+  - driver.common component.lists
+  component_info:
+    common:
+      version: 2.0.0
+      component_bundle: bundle.drivers
+      type: software_component
+      full_name: Component power manager core
+      user_visible: false
+      description: Component power manager core level
+      manifest_name: power_manager_core
+
+component.power_manager_evkmimxrt1060:
+  section-type: component
+  contents:
+    repo_base_path: components/power_manager/boards/evkmimxrt1060
+    project_base_path: component/power_manager/boards/evkmimxrt1060
+    cc-include:
+    - repo_relative_path: "./"
+    files:
+    - source: fsl_pm_board.h
+    - source: fsl_pm_board.c
+    - source: fsl_pm_board_config.h
+  __requires__:
+  - component.power_manager_core driver.gpc_1 driver.dcdc_1 driver.pmu
+  component_info:
+    common:
+      version: 2.0.0
+      component_bundle: bundle.drivers
+      type: software_component
+      full_name: Component power manager EVKMIMXRT1060
+      description: Component power manager EVKMIMXRT1060
+      manifest_name: power_manager_EVKMIMXRT1060
+
+component.power_manager_evkkw45b41z:
+  section-type: component
+  contents:
+    repo_base_path: components/power_manager/boards/KW45B41Z-EVK
+    project_base_path: component/power_manager/boards/KW45B41Z-EVK
+    cc-include:
+    - repo_relative_path: "./"
+    files:
+    - source: fsl_pm_board.h
+    - source: fsl_pm_board.c
+    - source: fsl_pm_board_config.h
+  __requires__:
+  - component.power_manager_core driver.spc driver.cmc driver.wuu driver.clock driver.crc board.kw45b41zevk
+  component_info:
+    common:
+      version: 2.0.0
+      component_bundle: bundle.drivers
+      type: software_component
+      full_name: Component power manager KW45B41Z-EVK
+      description: Component power manager KW45B41Z-EVK
+      manifest_name: power_manager_KW45B41Z_EVK
+
+component.power_manager_evkk32w148:
+  section-type: component
+  contents:
+    repo_base_path: components/power_manager/boards/K32W148-EVK
+    project_base_path: component/power_manager/boards/K32W148-EVK
+    cc-include:
+    - repo_relative_path: "./"
+    files:
+    - source: fsl_pm_board.h
+    - source: fsl_pm_board.c
+    - source: fsl_pm_board_config.h
+  __requires__:
+  - component.power_manager_core driver.spc driver.cmc driver.wuu driver.clock driver.crc board.k32w148evk
+  component_info:
+    common:
+      version: 2.0.0
+      component_bundle: bundle.drivers
+      type: software_component
+      full_name: Component power manager K32W148-EVK
+      description: Component power manager K32W148-EVK
+      manifest_name: power_manager_K32W148_EVK
+
+component.power_manager_lockw45b41z:
+  section-type: component
+  contents:
+    repo_base_path: components/power_manager/boards/KW45B41Z-LOC
+    project_base_path: component/power_manager/boards/KW45B41Z-LOC
+    cc-include:
+    - repo_relative_path: "./"
+    files:
+    - source: fsl_pm_board.h
+    - source: fsl_pm_board.c
+    - source: fsl_pm_board_config.h
+  __requires__:
+  - component.power_manager_core driver.spc driver.cmc driver.wuu driver.clock driver.crc board.kw45b41zloc
+  component_info:
+    common:
+      version: 2.0.0
+      component_bundle: bundle.drivers
+      type: software_component
+      full_name: Component power manager KW45B41Z-LOC
+      description: Component power manager KW45B41Z-LOC
+      manifest_name: power_manager_KW45B41Z_LOC
+
+component.power_manager_rdrw610:
+  section-type: component
+  contents:
+    repo_base_path: components/power_manager/boards/rdrw612bga
+    project_base_path: component/power_manager/boards/rdrw612bga
+    cc-include:
+    - repo_relative_path: "./"
+    files:
+    - source: fsl_pm_board.h
+    - source: fsl_pm_board.c
+    - source: fsl_pm_board_config.h
+  __requires__:
+  - component.power_manager_core
+  component_info:
+    common:
+      version: 2.0.0
+      component_bundle: bundle.drivers
+      type: software_component
+      full_name: Component power manager rdrw612bga
+      description: Component power manager rdrw612bga
+      manifest_name: power_manager_rdrw612bga
+
+component.power_manager_mcxw34x:
+  section-type: component
+  contents:
+    repo_base_path: components/power_manager/boards/MCXW34x
+    project_base_path: component/power_manager/devices
+    cc-include:
+    - repo_relative_path: "./"
+    files:
+    - source: fsl_pm_board.h
+    - source: fsl_pm_board.c
+    - source: fsl_pm_board_config.h
+  __requires__:
+  - component.power_manager_core driver.clock board.mcxw34xevk
+  component_info:
+    common:
+      version: 2.0.0
+      component_bundle: bundle.drivers
+      type: software_component
+      full_name: Component power manager MCXW34x
+      description: Component power manager MCXW34x
+      manifest_name: power_manager_MCXW34x
+
+component.power_manager_mcxw74x:
+  section-type: component
+  contents:
+    repo_base_path: components/power_manager/boards/MCXW74x
+    project_base_path: component/power_manager/devices
+    cc-include:
+    - repo_relative_path: "./"
+    files:
+    - source: fsl_pm_board.h
+    - source: fsl_pm_board.c
+    - source: fsl_pm_board_config.h
+  __requires__:
+  - component.power_manager_core driver.clock board.mcxw74xevk
+  component_info:
+    common:
+      version: 2.0.0
+      component_bundle: bundle.drivers
+      type: software_component
+      full_name: Component power manager MCXW74x
+      description: Component power manager MCXW74x
+      manifest_name: power_manager_MCXW74x
